@@ -1,8 +1,17 @@
+server:
+  port: ${PORT:8823}
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    serviceurl: defaultZone=http://localhost:8850/eureka/
+eureka:
+  client:
+    register-with-eureka: true
+    #fetch-registry: false
+    serviceurl:
+      defaultZone: http://localhost:8850/eureka/
+message: Configuracion de Cajero en el servidor levantado!
 spring:
-port: ${PORT:8823}
-  datasource:
-    url: jdbc:mysql://localhost:8870/basedan
-    username: root
-    password: 12345678
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+  application:
+#    name: ms_cajero
+    name: cajero-service
