@@ -1,4 +1,5 @@
 spring:
+port: ${PORT:8823}
   datasource:
     url: jdbc:mysql://localhost:8870/basedan
     username: root
