@@ -1,5 +1,4 @@
-[9:21 p.m., 1/7/2024] Daniel: https://meet.google.com/dwh-iwue-urn
-[9:24 p.m., 1/7/2024] +51 936 500 664: server:
+server:
   port: ${PORT:8761}
 eureka:
   client:
