@@ -1,0 +1,22 @@
+server:
+   port: ${PORT:8060}
+message: Configuracion de producto en el servidor levantado!
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 12345678
+    url: jdbc:mysql://localhost:3306/baseDan?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect                     
+  cloud:
+    config:
+      uri: http://localhost:8080 
+eureka:
+  client:
+    register-with-eureka:    true
+    #fetch-registry: false
+    serviceurl:
+      defaultZone: http://localhost:8761/eureka/
